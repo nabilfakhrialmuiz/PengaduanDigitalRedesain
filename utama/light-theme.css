@@ -1,0 +1,504 @@
+/* Light Theme CSS for PENGADUAN DIGITAL */
+:root[data-theme='light'] {
+    /* Light Theme Color Palette */
+    --primary-color: #00a86b;        /* Soft green */
+    --secondary-color: #4ecdc4;      /* Teal */
+    --bg-color: #f4f4f4;             /* Light gray background */
+    --text-color: #333333;           /* Dark gray text */
+    --accent-color: #ff6b6b;         /* Soft red */
+    --dark-bg: #ffffff;              /* White background for dark elements */
+    --card-bg: rgba(0, 0, 0, 0.05);  /* Light card background */
+}
+
+/* Light Theme Specific Animations and Effects */
+[data-theme='light'] .bg-animation {
+    background: linear-gradient(45deg, #e0e0e0, #f5f5f5);
+}
+
+[data-theme='light'] .bg-animation::before {
+    background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 20px,
+        rgba(0, 138, 107, 0.05) 20px,
+        rgba(21, 21, 26, 0.308) 40px
+    );
+}
+
+/* Navbar Adjustments */
+[data-theme='light'] .navbar {
+    background: rgba(244, 244, 244, 0.9);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--primary-color);
+}
+
+[data-theme='light'] .nav-links a {
+    color: var(--text-color);
+}
+
+[data-theme='light'] .nav-links a::before {
+    background: var(--primary-color);
+}
+
+[data-theme='light'] .dropbtn {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    color: var(--dark-bg);
+}
+
+[data-theme='light'] .dropdown-content {
+    background: rgba(244, 244, 244, 0.95);
+    border: 1px solid var(--primary-color);
+}
+
+[data-theme='light'] .dropdown-content a {
+    color: var(--text-color);
+}
+
+[data-theme='light'] .dropdown-content a:hover {
+    background: rgba(0, 138, 107, 0.1);
+}
+
+[data-theme='light'] .dropdown-content a i {
+    color: var(--primary-color);
+}
+
+/* Hero Section */
+[data-theme='light'] .hero h1 {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: light-glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes light-glow {
+    from {
+        text-shadow: 0 0 10px rgba(0, 138, 107, 0.3),
+                     0 0 20px rgba(0, 138, 107, 0.2);
+    }
+    to {
+        text-shadow: 0 0 20px rgba(78, 205, 196, 0.3),
+                     0 0 30px rgba(78, 205, 196, 0.2);
+    }
+}
+
+/* Cards Section */
+[data-theme='light'] .card {
+    background: var(--card-bg);
+    border: 1px solid rgba(0, 138, 107, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme='light'] .card::before {
+    background: linear-gradient(45deg, 
+        transparent 0%, 
+        rgba(0, 138, 107, 0.05) 50%, 
+        transparent 100%);
+}
+
+[data-theme='light'] .card:hover {
+    box-shadow: 0 5px 15px rgba(0, 138, 107, 0.1);
+}
+
+/* Buttons */
+[data-theme='light'] .btn {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    color: var(--dark-bg);
+}
+
+/* Footer */
+[data-theme='light'] footer {
+    background: rgba(244, 244, 244, 0.9);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid var(--primary-color);
+}
+
+/* Theme Toggle Button */
+[data-theme='light'] .theme-toggle-btn {
+    color: var(--text-color);
+    background: transparent;
+}
+
+[data-theme='light'] .theme-toggle-btn:hover {
+    color: var(--primary-color);
+}
+
+/* Additional Light Theme Refinements */
+[data-theme='light'] * {
+    transition: background-color 0.3s ease, 
+                color 0.3s ease, 
+                border-color 0.3s ease;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    [data-theme='light'] .dropdown-content {
+        background: rgba(244, 244, 244, 0.95);
+    }
+}
+
+
+
+/* Light Theme Specific Styles for About Page */
+[data-theme='light'] .about.php.hero {
+    background: var(--bg-color);
+}
+
+[data-theme='light'] .about.php.hero-content h1 {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: light-hero-glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes light-hero-glow {
+    from {
+        text-shadow: 0 0 10px rgba(0, 168, 107, 0.3);
+    }
+    to {
+        text-shadow: 0 0 20px rgba(78, 205, 196, 0.3);
+    }
+}
+
+[data-theme='light'] .about.php.hero-content p {
+    color: var(--text-color);
+}
+
+/* About Section */
+[data-theme='light'] .about.php.section {
+    
+    color: var(--text-color);
+}
+
+[data-theme='light'] .about.php.section-title {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Features Section */
+[data-theme='light'] .about.php.features {
+    background: transparent;
+}
+
+[data-theme='light'] .about.php.feature-item {
+    background: var(--card-bg);
+    border: 1px solid rgba(0, 168, 107, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+[data-theme='light'] .about.php.feature-item:hover {
+    box-shadow: 0 5px 15px rgba(0, 168, 107, 0.1);
+    transform: translateY(-5px);
+}
+
+[data-theme='light'] .about.php.feature-icon {
+    color: var(--primary-color);
+}
+
+[data-theme='light'] .about.php.feature-item h3 {
+    color: var(--text-color);
+}
+
+[data-theme='light'] .about.php.feature-item p {
+    color: var(--text-color);
+}
+
+/* Stats Section */
+[data-theme='light'] .about.php.stats {
+    background: transparent;
+}
+
+[data-theme='light'] .about.php.stat-item {
+    background: var(--card-bg);
+    border: 1px solid rgba(0, 168, 107, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+[data-theme='light'] .about.php.stat-item:hover {
+    box-shadow: 0 5px 15px rgba(0, 168, 107, 0.1);
+    transform: translateY(-5px);
+}
+
+[data-theme='light'] .about.php.stat-number {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+[data-theme='light'] .about.php.stat-label {
+    color: var(--text-color);
+}
+
+/* Footer in Light Theme */
+[data-theme='light'] .about.php.footer {
+    backdrop-filter: blur(10px);
+    border-top: 1px solid var(--primary-color);
+    color: var(--text-color);
+}
+
+[data-theme='light'] .login-page {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+[data-theme='light'] .login-container {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--primary-color);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='light'] .login-title h2 {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+[data-theme='light'] .login-container .input-group input {
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 168, 107, 0.2);
+    color: var(--text-color);
+}
+
+[data-theme='light'] .login-container .input-group input:focus,
+[data-theme='light'] .login-container .input-group input:valid {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 10px rgba(0, 168, 107, 0.2);
+}
+
+[data-theme='light'] .login-container .input-group label {
+    color: rgba(51, 51, 51, 0.5);
+}
+
+[data-theme='light'] .login-container .input-group input:focus + label,
+[data-theme='light'] .login-container .input-group input:valid + label {
+    color: var(--primary-color);
+    background: var(--bg-color);
+}
+
+[data-theme='light'] .login-container .btn {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    color: var(--dark-bg);
+}
+
+[data-theme='light'] .login-container .btn:hover {
+    box-shadow: 0 0 20px rgba(0, 168, 107, 0.3);
+}
+
+[data-theme='light'] .login-container .error {
+    color: var(--accent-color);
+    background: rgba(255, 107, 107, 0.1);
+}
+
+[data-theme='light'] .login-container .signup-link a {
+    color: var(--primary-color);
+}
+
+[data-theme='light'] .back-btn {
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--primary-color);
+    color: var(--text-color);
+}
+
+[data-theme='light'] .back-btn:hover {
+    background: rgba(0, 168, 107, 0.2);
+}
+
+/* Light Theme Styles for Pengaduan Page */
+[data-theme='light'] .pengaduan-container {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--primary-color);
+    color: var(--text-color);
+}
+
+[data-theme='light'] .pengaduan-title h2 {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+[data-theme='light'] .input-group input, 
+[data-theme='light'] .input-group textarea {
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 168, 107, 0.2);
+    color: var(--text-color);
+}
+
+[data-theme='light'] .input-group input:focus, 
+[data-theme='light'] .input-group input:valid,
+[data-theme='light'] .input-group textarea:focus,
+[data-theme='light'] .input-group textarea:valid {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 10px rgba(0, 168, 107, 0.2);
+}
+
+[data-theme='light'] .input-group label {
+    color: rgba(51, 51, 51, 0.5);
+}
+
+[data-theme='light'] .input-group input:focus + label,
+[data-theme='light'] .input-group input:valid + label,
+[data-theme='light'] .input-group textarea:focus + label,
+[data-theme='light'] .input-group textarea:valid + label {
+    color: var(--primary-color);
+    background: var(--bg-color);
+}
+
+[data-theme='light'] .input-group input[type="file"]::file-selector-button {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    color: var(--dark-bg);
+}
+
+[data-theme='light'] .btn {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    color: var(--dark-bg);
+}
+
+[data-theme='light'] .btn:hover {
+    box-shadow: 0 0 20px rgba(0, 168, 107, 0.3);
+}
+
+[data-theme='light'] .error {
+    color: var(--accent-color);
+    background: rgba(255, 107, 107, 0.1);
+}
+
+[data-theme='light'] .back-btn {
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--primary-color);
+    color: var(--text-color);
+}
+
+[data-theme='light'] .back-btn:hover {
+    background: rgba(0, 168, 107, 0.2);
+}
+
+[data-theme='light'] .riwayat-container {
+    background: var(--card-bg);
+    border: 1px solid rgba(0, 138, 107, 0.2);
+}
+
+[data-theme='light'] .riwayat-table {
+    color: var(--text-color);
+}
+
+[data-theme='light'] .riwayat-table th {
+    background: rgba(0, 138, 107, 0.1);
+    border-bottom: 1px solid rgba(0, 138, 107, 0.2);
+    color: var(--text-color);
+}
+
+[data-theme='light'] .riwayat-table td {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Status and Tanggapan Colors */
+[data-theme='light'] .status-proses {
+    color: #d68000;  /* Adjusted for better visibility */
+}
+
+[data-theme='light'] .status-selesai {
+    color: #008a6b;  /* Matched with primary color */
+}
+
+[data-theme='light'] .tanggapan-section {
+    background: rgba(0, 0, 0, 0.05);
+    border-left: 4px solid var(--primary-color);
+    color: var(--text-color);
+}
+
+[data-theme='light'] .tanggapan-date {
+    color: var(--secondary-color);
+}
+
+[data-theme='light'] .pengaduan-image {
+    border: 2px solid var(--primary-color);
+}
+
+[data-theme='light'] .empty-state {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+/* Light Theme Specific Styles for Tanggapan Form */
+[data-theme='light'] .tanggapan-container {
+    background: rgba(244, 244, 244, 0.9);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='light'] .tanggapan-title h2 {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+[data-theme='light'] .input-group select,
+[data-theme='light'] .input-group input,
+[data-theme='light'] .input-group textarea {
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 138, 107, 0.2);
+    color: var(--text-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme='light'] .input-group select option {
+    background: var(--dark-bg);
+    color: var(--text-color);
+}
+
+[data-theme='light'] .input-group label {
+    color: rgba(51, 51, 51, 0.6);
+}
+
+[data-theme='light'] .password-requirements {
+    color: var(--text-color);
+}
+
+/* Data Management Dropdown */
+[data-theme='light'] .data-btn {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    color: var(--dark-bg);
+}
+
+[data-theme='light'] .data-content {
+    background: rgba(244, 244, 244, 0.95);
+    border: 1px solid var(--primary-color);
+}
+
+[data-theme='light'] .data-content a {
+    color: var(--text-color);
+}
+
+[data-theme='light'] .data-content a:hover {
+    background: rgba(0, 138, 107, 0.1);
+}
+
+[data-theme='light'] .data-content a i {
+    color: var(--primary-color);
+}
+
+[data-theme='light'] .swal2-input, .swal2-select {
+    background: rgba(10, 10, 10, 0.5) !important;
+    border: 1px solid var(--primary-color) !important;
+    color: var(--text-color) !important;
+}
+
+/* Responsive Adjustments for Light Theme */
+@media (max-width: 768px) {
+    [data-theme='light'] .about.php.hero-content h1 {
+        font-size: 2rem;
+    }
+
+    [data-theme='light'] .about.php.section-title {
+        font-size: 2rem;
+    }
+}
+

@@ -1,0 +1,24 @@
+2024-12-05 07:47:30 | NIK: 111210 | Status: PENGADUAN_DELETE_FAILED | Message: 
+2024-12-05 07:47:48 | NIK: 111210 | Status: PENGADUAN_DELETE_FAILED | Message: 
+2024-12-05 07:48:52 | NIK: 111210 | Status: PENGADUAN_DELETE_FAILED | Message: 
+2024-12-05 07:49:14 | NIK: 111210 | Status: PENGADUAN_DELETE_FAILED | Message: 
+2024-12-05 07:49:16 | NIK: 111211 | Status: PENGADUAN_DELETE_FAILED | Message: 
+2024-12-05 07:49:19 | NIK: 11123 | Status: PENGADUAN_DELETE_FAILED | Message: 
+2024-12-05 07:49:26 | NIK: 131313441325 | Status: SUCCESS | Message: Successfully deleted student and related records
+2024-12-05 07:49:34 | NIK: 11128 | Status: SUCCESS | Message: Successfully deleted student and related records
+2024-12-05 07:49:38 | NIK: 111210 | Status: PENGADUAN_DELETE_FAILED | Message: 
+2024-12-05 07:52:55 | NIK: 11129 | Status: PENGADUAN_DELETE_FAILED | Message: 
+2024-12-05 07:54:01 | NIK: 11127 | Status: PENGADUAN_DELETE_FAILED | Message: 
+2024-12-05 07:54:04 | NIK: 11126 | Status: PENGADUAN_DELETE_FAILED | Message: 
+2024-12-05 07:54:07 | NIK: 11126 | Status: PENGADUAN_DELETE_FAILED | Message: 
+2024-12-05 07:54:53 | NIK: 111211 | Status: PENGADUAN_DELETE_FAILED | Message: 
+2024-12-05 07:55:20 | NIK: 11129 | Status: SUCCESS | Message: Successfully deleted student and related records
+2024-12-05 08:17:43 | NIK: 11124 | Status: PENGADUAN_DELETE_FAILED | Message: 
+2024-12-05 08:17:50 | NIK: 11124 | Status: PENGADUAN_DELETE_FAILED | Message: 
+2024-12-05 08:18:08 | NIK: 11123 | Status: PENGADUAN_DELETE_FAILED | Message: 
+2024-12-05 13:57:28 | NIK: 111210 | Status: SUCCESS | Message: Successfully deleted student and related records
+2024-12-05 15:03:28 | NIK: 322321234 | Status: SUCCESS | Message: Successfully deleted student and related records
+2024-12-05 15:32:19 | NIK: 46543456 | Status: SUCCESS | Message: Successfully deleted student and related records
+2024-12-05 15:35:59 | NIK: 87656789 | Status: SUCCESS | Message: Successfully deleted student and related records
+2025-01-02 14:46:15 | NIK: 111211 | Status: SISWA_DELETE_FAILED | Message: 
+2025-01-02 14:46:45 | NIK: 11125 | Status: SUCCESS | Message: Successfully deleted student and related records

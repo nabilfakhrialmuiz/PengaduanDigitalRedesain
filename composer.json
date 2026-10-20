@@ -1,0 +1,8 @@
+{
+    "require": {
+        "phpmailer/phpmailer": "*",
+        "pragmarx/google2fa": "*",
+        "twilio/sdk": "*",
+        "vlucas/phpdotenv": "*"
+    }
+}
